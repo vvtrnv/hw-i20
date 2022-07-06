@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- INCLUDE CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Task2. Forms</title>
+</head>
+<body>
+
+<main>
+  <div class="container">
+    <h1>Запись на курсы программирования</h1>
+    <hr>
+    <form action="" method="post">
+      <div class="block">
+        <label for="user_name" class="field_name">Имя:</label>
+        <input type="name" name="user_name" placeholder="Андрей" id="user_name" required>
+      </div>
+
+      <div class="block">
+        <input type="radio" name="lang_select" value="java" id="select_java" checked>
+        <label for="select_java">Java</label>
+        <input type="radio" name="lang_select" value="c++" id="select_c++">
+        <label for="select_c++">C++</label>
+        <input type="radio" name="lang_select" value="python" id="select_python">
+        <label for="select_python">Python</label>
+        <input type="radio" name="lang_select" value="php" id="select_php">
+        <label for="select_php">PHP</label>
+        <input type="radio" name="lang_select" value="javascript" id="select_javascript">
+        <label for="select_javascript">JavaScript</label>
+      </div>
+
+      <div class="block">
+        <label for="another_info" class="field_name">Дополнительная информация</label>
+        <textarea id="another_info" placeholder="Есть опыт программирования на Java"></textarea>
+      </div>
+
+      <div class="block">
+        <label for="user_pass" class="field_name">Секретное слово</label>
+        <input type="password" name="user_pass" id="user_pass" required>
+      </div>
+
+      <div class="block">
+        <input type="checkbox" name="agreement" id=agreement" required>
+        <label for="agreement">С правилами ознакомился и согласен</label>
+      </div>
+
+      <div class="block">
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+      </div>
+
+    </form>
+
+    <hr>
+    <p>Made by Vladimir</p>
+
+    <div class="panel">
+      <a href="index.html">Task 1. Таблицы</a>
+      <a href="task2-forms.html">Task 2. Формы</a>
+      <a href="task3-cards.html">Task 3. Карточки</a>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
