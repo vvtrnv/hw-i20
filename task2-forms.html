@@ -33,23 +33,22 @@
       </div>
 
       <div class="block">
-        <label for="another_info" class="field_name">Дополнительная информация</label>
-        <textarea id="another_info" placeholder="Есть опыт программирования на Java"></textarea>
+        <label for="info" class="field_name">Дополнительная информация</label>
+        <textarea id="info" name="another_info" placeholder="Есть опыт программирования на Java"></textarea>
       </div>
 
       <div class="block">
-        <label for="user_pass" class="field_name">Секретное слово</label>
-        <input type="password" name="user_pass" id="user_pass" required>
+        <label for="pass" class="field_name">Секретное слово</label>
+        <input id="pass" type="password" name="user_pass" required>
       </div>
 
       <div class="block">
-        <input type="checkbox" name="agreement" id=agreement" required>
-        <label for="agreement">С правилами ознакомился и согласен</label>
+        <label><input type="checkbox" value="agreement" required>С правилами ознакомился и согласен</label>
       </div>
 
       <div class="block">
-        <button type="submit">Отправить</button>
-        <button type="reset">Очистить</button>
+        <button type="submit" name="register">Отправить</button>
+        <button type="reset" name="clear">Очистить</button>
       </div>
 
     </form>

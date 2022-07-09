@@ -70,24 +70,34 @@ SHOP CARDS
 */
 .shop {
   margin-top: 20px;
+  display: flex;
 }
 
 .shop__card {
   position: relative;
-  display: inline-block;
   width: 25%;
   min-width: 180px;
   height: 400px;
   background-color: #fff;
   border-radius: 4px;
 }
-.shop__card:not(:first-child){
+.card1 {
+  order:2;
+}
+.card2 {
+  order: 3;
+}
+.card3 {
+  order: 1;
+}
+.shop__card{
   margin-left: 40px;
 }
 
 .shop__card .image {
-  position: relative;
-  display: block;
+
+  display: flex;
+  align-items: center;
   height: 85%;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -103,10 +113,7 @@ SHOP CARDS
 }
 
 .shop__card .image .num {
-  position: absolute;
-
-  top: 20%;
-  left: 34%;
+  margin: 0 auto;
   font-size: 12rem;
   font-weight: 500;
 }
